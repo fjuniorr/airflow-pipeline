@@ -9,5 +9,6 @@ Vagrant.configure("2") do |config|
   config.ssh.forward_agent = true
 
   config.vm.synced_folder "dags/", "/home/vagrant/airflow/dags/"
+  config.vm.synced_folder "/Users/macbook/Projects/hello_docker", "/home/vagrant/projects/rstats-piper"
 
 end
