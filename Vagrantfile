@@ -8,4 +8,6 @@ Vagrant.configure("2") do |config|
   config.vm.network "private_network", ip: "192.168.33.50"
   config.ssh.forward_agent = true
 
+  config.vm.synced_folder "dags/", "/home/vagrant/airflow/dags/"
+
 end
