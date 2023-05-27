@@ -2,5 +2,5 @@
 
 ```
 ssh vagrant@127.0.0.1 -p 2222 -i .vagrant/machines/default/virtualbox/private_key
-ansible vm -i inventory.ini -m ping
+ansible vm -m ping
 ```
