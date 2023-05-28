@@ -15,4 +15,4 @@ ansible vm -a "tail /var/log/dmesg"
 ansible vm -b -a "tail /var/log/syslog" # become sudo
 ```
 
-Login with username: admin  password: 6TmFM5hpUq8w4Epa
+

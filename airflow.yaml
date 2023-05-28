@@ -29,6 +29,12 @@
         state: present
         executable: pip3
 
+    - name: Install Airflow Docker provider using pip
+      pip:
+        name: GitPython
+        state: present
+        executable: pip3
+
     - name: Set Airflow executor
       ansible.builtin.lineinfile:
         path: /home/vagrant/airflow/airflow.cfg
