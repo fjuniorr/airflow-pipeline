@@ -65,3 +65,9 @@
         name: docker-ce
         state: present
         update_cache: yes
+
+    - name: Add Airflow user to docker group
+      user:
+        name: airflow
+        groups: docker
+        append: yes

@@ -11,7 +11,7 @@ with DAG('docker_dag',
     # Task to build the Docker image
     t1 = BashOperator(
         task_id='build_docker_image',
-        bash_command='docker build -t piper /home/vagrant/projects/rstats-piper',
+        bash_command='sudo docker build -t piper /home/vagrant/projects/rstats-piper',
     )
 
     # Task to run the Docker container
